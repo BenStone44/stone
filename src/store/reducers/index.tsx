@@ -1,3 +1,3 @@
-import { combineReducers } from "redux";
-import points from "./points";
-export default combineReducers({points});
+import { combineReducers } from 'redux'
+import points from './points'
+export default combineReducers({ points })

@@ -1,4 +1,4 @@
-import { LatLngExpression } from "leaflet";
+import { LatLngExpression } from 'leaflet'
 
 export interface singlePoint {
   id: number;
@@ -6,13 +6,10 @@ export interface singlePoint {
   position: LatLngExpression;
 }
 
-
 export interface Line {
   points: number[];
 }
 
-
 export interface Points{
   points: singlePoint[];
 }
-
