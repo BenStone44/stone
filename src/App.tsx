@@ -1,12 +1,11 @@
 import React from 'react';
-import Map from "./components/Map/Map";
+import MapCon from "./containers/MapCon";
 function App() {
   return (
     <div className="App">
-      <Map />
+      <MapCon />
     </div>
   );
-  
 }
 
 export default App;

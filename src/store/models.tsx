@@ -1,15 +1,18 @@
 import { LatLngExpression } from "leaflet";
 
-export interface PlaceState {
-  places: Place[];
+export interface singlePoint {
+  id: number;
+  radius: number;
+  position: any;
 }
 
 
-export interface Place {
-  position: LatLngExpression;
+export interface Line {
+  points: number[];
 }
 
 
-export interface IState {
-  places: PlaceState;
+export interface Points{
+  points: singlePoint[];
 }
+

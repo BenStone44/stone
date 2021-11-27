@@ -1,3 +1,3 @@
 import { combineReducers } from "redux";
-import places from "./places";
-export default combineReducers({places});
+import points from "./points";
+export default combineReducers({points});
