@@ -1,12 +1,11 @@
 import Map from '../components/Map/Map'
 import { Dispatch, bindActionCreators } from "redux";
 import {connect} from 'react-redux'
-import { Points } from "..//store/models";
+import { singlePoint } from "..//store/models";
 
-const mapStateToProps = (state: Points) => {
-  const {points} = state;
+const mapStateToProps = (state: Array<singlePoint>) => {
     return {
-      points: points,
+      points: state,
     };
   };
 

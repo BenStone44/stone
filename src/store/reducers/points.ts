@@ -1,15 +1,13 @@
-  import { Points } from "../models";
+  import { singlePoint } from "../models";
   import { pointData } from "../../data";
   import { LatLngExpression } from "leaflet";
   
-  const initialState: Points = {
-    points: pointData,
-  };
+  const initialState: Array<singlePoint> = pointData;
   
   const productsReducer = (
-    state: Points = initialState,
+    state: singlePoint[] = initialState,
     action: { type: string; payload: any }
-  ): Points => {
+  ): singlePoint[] => {
     switch (action.type) {
     //   case SET_ALL_PLACES: {
     //     return { ...state, places: action.payload };
